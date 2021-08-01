@@ -1,0 +1,358 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --white-text-color: #ffffff;
+  --black-text-color: #000000;
+  --hero-footer-color: #2f303a;
+  --second-button-color: #188ce8;
+}
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  color: var(--primary-text-color);
+  background-color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+/* цвет основного текста #212121 */
+/* вторичный цвет текста #757575 */
+/* акцент #2196F3 */
+
+/*фон хедера и футера #2F303A*/
+/*вторичный фон #F5F4FA*/
+
+.logo-link {
+  font-family: 'Raleway', sans-serif;
+  color: var(--accent-color);
+  text-decoration: none;
+  font-size: 26px;
+  line-height: 1.17;
+  font-weight: 700;
+  margin-right: 93px;
+}
+.logo-studio {
+  color: var(--black-text-color);
+}
+.site-nav .link {
+  font-weight: 500;
+  color: var(--title-text-color);
+  line-height: 1.17;
+  text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+  cursor: pointer;
+}
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+.contacts-list .link {
+  font-weight: 500;
+  color: var(--primary-text-color);
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+.contacts-list .link:hover,
+.contacts-list .link:focus {
+  color: var(--accent-color);
+}
+
+.container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.site-nav,
+.contacts-list {
+  display: flex;
+}
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.contacts-list {
+  margin-left: auto;
+}
+a {
+  display: block;
+}
+
+.list-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.section.no-padding {
+  padding-top: 0;
+}
+.section-header {
+  border-bottom: 1px solid rgba(236, 236, 236, 1);
+}
+/* Секция герой*/
+
+.hero {
+  background: var(--hero-footer-color);
+  max-width: 1600px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 200px 0;
+}
+.hero-title {
+  color: var(--white-text-color);
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  width: 696px;
+  margin: auto;
+}
+.button {
+  background: var(--accent-color);
+  font: inherit;
+  min-width: 200px;
+  height: 50px;
+  padding: 10px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin-top: 30px;
+}
+
+.button-primary {
+  color: var(--white-text-color);
+  text-decoration: none;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  line-height: 1.88;
+}
+.button-primary:hover,
+.button-primary:focus {
+  background: var(--second-button-color);
+  color: var(--white-text-color);
+}
+/*Преимущества*/
+
+.hidden-title {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+.title-text {
+  color: var(--title-text-color);
+  font-size: 14px;
+  line-height: 1.14;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.text {
+  font-size: 14px;
+  line-height: 1.71;
+  width: 261px;
+}
+
+.quality-list {
+  display: flex;
+}
+
+.list + .list {
+  margin-left: 30px;
+}
+
+/*Наши услуги*/
+
+.section-title {
+  color: var(--title-text-color);
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  font-weight: bold;
+  margin: 0 0 50px 0;
+}
+
+.list-works {
+  display: flex;
+}
+
+/*Наша команда*/
+
+.team {
+  background: #f5f4fa;
+}
+
+.subtitle {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  margin-top: 0;
+}
+.title-card {
+  color: var(--title-text-color);
+  font-size: 16px;
+  line-height: 1.19;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.team-cards {
+  display: flex;
+}
+.content-card {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.list.team-item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background: #ffffff;
+}
+/*Футер*/
+
+.footer-logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  color: var(--accent-color);
+  text-decoration: none;
+  font-size: 26px;
+  line-height: 1.19;
+  margin-bottom: 20px;
+}
+
+.list-address:not(:last-child) {
+  margin-bottom: 9px;
+}
+.footer .logo-studio {
+  color: var(--white-text-color);
+}
+.footer {
+  background: var(--hero-footer-color);
+  padding: 60px 0;
+}
+.address {
+  font-style: normal;
+}
+.contact-letter {
+  color: var(--white-text-color);
+  font-size: 14px;
+  line-height: 1.71;
+}
+.link-mail,
+.link-tel {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  line-height: 1.71;
+  text-decoration: none;
+}
+
+.link-mail:focus,
+.link-mail:hover {
+  color: var(--accent-color);
+}
+.link-tel:focus,
+.link-tel:hover {
+  color: var(--accent-color);
+}
+.portfolio-item {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*Портфолио работ*/
+
+.filter-button {
+  color: var(--title-text-color);
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  padding: 6px 22px;
+  border-color: transparent;
+  border-radius: 4px;
+  font-weight: 500;
+}
+.filter-button:hover,
+.filter-button:focus {
+  color: var(--white-text-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
+
+.title-item {
+  color: var(--title-text-color);
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+}
+.text-item {
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.88;
+  margin-top: 4px;
+  margin-bottom: 0;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.list-button:not(:last-child) {
+  margin-right: 8px;
+}
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+.portfolio > .card-list {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.card-content {
+  padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  margin: 0;
+}
