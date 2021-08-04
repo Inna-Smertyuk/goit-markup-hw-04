@@ -66,12 +66,12 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  display: flex;
 }
 .contacts-list .link:hover,
 .contacts-list .link:focus {
   color: var(--accent-color);
 }
-
 .container {
   width: 1200px;
   padding-right: 15px;
@@ -79,7 +79,6 @@ body {
   margin-right: auto;
   margin-left: auto;
 }
-
 .site-nav,
 .contacts-list {
   display: flex;
@@ -118,7 +117,6 @@ a {
 .list-item:not(:last-child) {
   margin-right: 50px;
 }
-
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -130,7 +128,6 @@ a {
   border-bottom: 1px solid rgba(236, 236, 236, 1);
 }
 /* Секция герой*/
-
 .hero {
   background: var(--hero-footer-color);
   max-width: 1600px;
@@ -157,7 +154,6 @@ a {
 .button {
   background: var(--accent-color);
   font: inherit;
-
   min-width: 200px;
   height: 50px;
   padding: 10px 32px;
@@ -207,11 +203,9 @@ p {
   line-height: 1.71;
   width: 270px;
 }
-
 .quality-list {
   display: flex;
 }
-
 .list + .list {
   margin-left: 30px;
 }
@@ -223,10 +217,9 @@ p {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  font-weight: bold;
+  font-weight: 700;
   margin: 0 0 50px 0;
 }
-
 .list-works {
   display: flex;
 }
@@ -269,7 +262,6 @@ p {
   border-radius: 0px 0px 4px 4px;
   background: #ffffff;
 }
-
 .social-link {
   display: flex;
   align-items: center;
@@ -291,7 +283,6 @@ p {
 .icons-list:not(:last-child) {
   margin-right: 10px;
 }
-
 .icon-social {
   fill: #afb1b8;
 }
@@ -348,7 +339,6 @@ p {
   line-height: 1.19;
   margin-bottom: 20px;
 }
-
 .list-address:not(:last-child) {
   margin-bottom: 9px;
 }
@@ -374,7 +364,6 @@ p {
   line-height: 1.71;
   text-decoration: none;
 }
-
 .link-mail:focus,
 .link-mail:hover {
   color: var(--accent-color);
@@ -383,23 +372,20 @@ p {
 .link-tel:hover {
   color: var(--accent-color);
 }
-.portfolio-item {
-  text-decoration: none;
-  color: inherit;
-}
 .title {
   line-height: 1.14;
   text-transform: uppercase;
   color: #ffffff;
   font-style: normal;
-
-  font-weight: bold;
+  margin-bottom: 20px;
+  font-weight: 700;
   font-size: 14px;
-  line-height: 1.14;
 }
-
+.icon {
+  fill: #ffffff;
+}
 .footer-social {
-  display: flex;
+  display: inline-block;
   margin-left: 70px;
 }
 .footer-container {
@@ -408,11 +394,9 @@ p {
 }
 .social-item {
   display: flex;
-  margin-top: 20px 0 0 0;
   justify-content: space-between;
 }
-
-.icons-social-footer {
+.social-link-footer {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -421,13 +405,12 @@ p {
   justify-content: center;
   background: rgba(255, 255, 255, 0.1);
 }
-.social-icons:not(:last-child) {
+.icons-social-footer:not(:last-child) {
   margin-right: 10px;
 }
-
-.social-link:hover,
-.social-link:focus {
-  color: var(--accent-color);
+.social-link-footer:hover,
+.social-link-footer:focus {
+  background-color: var(--accent-color);
 }
 /*Портфолио работ*/
 
@@ -446,8 +429,9 @@ p {
   color: var(--white-text-color);
   background-color: var(--accent-color);
   cursor: pointer;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-
 .title-item {
   color: var(--title-text-color);
   font-size: 18px;
@@ -481,7 +465,6 @@ p {
   margin-top: 30px;
   margin-left: 30px;
 }
-
 img {
   display: block;
   width: 100%;
@@ -493,4 +476,14 @@ img {
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   margin: 0;
+}
+.portfolio-item {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+.portfolio-item:hover,
+.portfolio-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
